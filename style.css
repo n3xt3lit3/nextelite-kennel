@@ -8,6 +8,7 @@
   --text3: #9ca3af;
   --border: #e5e5e5;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --heading: 'Clash Display', 'Inter', -apple-system, sans-serif;
 }
 
 body {
@@ -34,6 +35,7 @@ nav {
 }
 
 .nav-logo {
+  font-family: var(--heading);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.35em;
@@ -68,6 +70,8 @@ nav {
   gap: 64px;
   align-items: center;
 }
+
+h1, h2, h3 { font-family: var(--heading); }
 
 .hero-label {
   font-size: 0.6rem;
@@ -121,6 +125,7 @@ nav {
 }
 
 .section-label {
+  font-family: var(--heading);
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.35em;
