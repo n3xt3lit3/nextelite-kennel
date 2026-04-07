@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handbuilt Kennel — Steffensen</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">S T E F F E N S E N</a>
+  <div class="nav-links">
+    <a href="#gallery">Gallery</a>
+    <a href="#details">Details</a>
+    <a href="#order">Order</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-label">H A N D B U I L T</div>
+      <h1>Solid Wood<br>Dog Kennel</h1>
+      <p class="hero-desc">Custom built to order. Solid wood construction with window, elevated floor, and hand-stained finish. Designed for dogs who deserve better.</p>
+      <a href="#order" class="hero-btn">Order yours →</a>
+    </div>
+    <div class="hero-image">
+      <img src="hundehus-exterior-1.jpg" alt="Handbuilt dog kennel">
+    </div>
+  </div>
+</header>
+
+<section id="gallery" class="section gallery-section">
+  <div class="section-label">— T H E &nbsp; B U I L D</div>
+  <h2 class="gallery-headline">From Raw Wood<br>to Finished Kennel</h2>
+  <p class="gallery-subtitle">Every build is a craft process. Here's how yours comes together.</p>
+
+  <div class="build-story">
+    <div class="build-story-row build-story-wide">
+      <div class="build-card" onclick="openLightbox('kennel-5.jpg')">
+        <img src="kennel-5.jpg" alt="Frame construction" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">01</span>
+          <span class="build-label">Frame Construction</span>
+        </div>
+      </div>
+      <div class="build-card" onclick="openLightbox('kennel-2.jpg')">
+        <img src="kennel-2.jpg" alt="Assembly" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">02</span>
+          <span class="build-label">Assembly</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="build-story-row build-story-triple">
+      <div class="build-card" onclick="openLightbox('kennel-7.jpg')">
+        <img src="kennel-7.jpg" alt="Staining and finishing" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">03</span>
+          <span class="build-label">Staining &amp; Finishing</span>
+        </div>
+      </div>
+      <div class="build-card" onclick="openLightbox('kennel-6.jpg')">
+        <img src="kennel-6.jpg" alt="Detail work" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">04</span>
+          <span class="build-label">Detail Work</span>
+        </div>
+      </div>
+      <div class="build-card" onclick="openLightbox('kennel-1.jpg')">
+        <img src="kennel-1.jpg" alt="Near completion" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">05</span>
+          <span class="build-label">Near Completion</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="build-story-row build-story-hero">
+      <div class="build-card" onclick="openLightbox('hundehus-exterior-2.jpg')">
+        <img src="hundehus-exterior-2.jpg" alt="Finished exterior" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">06</span>
+          <span class="build-label">Finished Exterior</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="build-story-row build-story-final">
+      <div class="build-card" onclick="openLightbox('kennel-3.jpg')">
+        <img src="kennel-3.jpg" alt="Finished detail" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">07</span>
+          <span class="build-label">Finished Detail</span>
+        </div>
+      </div>
+      <div class="build-card" onclick="openLightbox('hundehus-interior.jpg')">
+        <img src="hundehus-interior.jpg" alt="Interior view" loading="lazy">
+        <div class="build-card-caption">
+          <span class="build-step">08</span>
+          <span class="build-label">Interior View</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+  <img src="" alt="Full size" id="lightbox-img">
+</div>
+
+<section id="details" class="section">
+  <div class="section-label">— D E T A I L S</div>
+  <div class="details-grid">
+    <div class="detail-card">
+      <div class="detail-num">01</div>
+      <h3>Solid Wood</h3>
+      <p>Built entirely from solid wood — no particle board, no shortcuts. Every piece is hand-selected for strength and grain.</p>
+    </div>
+    <div class="detail-card">
+      <div class="detail-num">02</div>
+      <h3>Elevated Floor</h3>
+      <p>Raised off the ground to protect against moisture, insects, and cold. Better airflow keeps your dog comfortable year-round.</p>
+    </div>
+    <div class="detail-card">
+      <div class="detail-num">03</div>
+      <h3>Window</h3>
+      <p>Built-in window provides natural light and ventilation. Your dog can see out, and you can see in.</p>
+    </div>
+    <div class="detail-card">
+      <div class="detail-num">04</div>
+      <h3>Hand-Stained</h3>
+      <p>Each kennel is hand-stained for weather protection and a premium finish that ages beautifully.</p>
+    </div>
+    <div class="detail-card">
+      <div class="detail-num">05</div>
+      <h3>Custom Built</h3>
+      <p>Every kennel is built to order. Size, layout, and finish can be adapted to your dog and your space.</p>
+    </div>
+    <div class="detail-card">
+      <div class="detail-num">06</div>
+      <h3>Built to Last</h3>
+      <p>No mass production. Each kennel is a one-off build with the care and attention of real craftsmanship.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section process-section">
+  <div class="section-label">— P R O C E S S</div>
+  <div class="process-grid">
+    <div class="process-img">
+      <img src="kennel-5.jpg" alt="Frame construction">
+    </div>
+    <div class="process-text">
+      <h2>From Raw<br>Wood to<br>Finished<br>Kennel</h2>
+      <p>Each build starts with raw lumber — hand-cut, assembled, sanded, and stained. The process takes time because quality does. No factory line. No compromise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section build-strip">
+  <div class="build-images">
+    <img src="kennel-7.jpg" alt="Staining">
+    <img src="kennel-2.jpg" alt="Assembly">
+    <img src="kennel-6.jpg" alt="Detail work">
+  </div>
+</section>
+
+<section id="order" class="section order-section">
+  <div class="section-label">— O R D E R</div>
+  <h2>Interested?<br>Let's Build Yours.</h2>
+  <p class="order-desc">Every kennel is custom built to order. Reach out to discuss size, finish, and delivery.</p>
+  <a href="mailto:nemine@nextelite.no?subject=Kennel%20Order" class="order-btn">nemine@nextelite.no →</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">S T E F F E N S E N</div>
+    <div class="footer-sub">Handbuilt in Norway</div>
+  </div>
+</footer>
+
+<script>
+function openLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = src;
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+</script>
+</body>
+</html>
