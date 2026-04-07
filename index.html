@@ -7,8 +7,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.mobile-notice {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Clash Display', 'Inter', sans-serif;
+}
+.mobile-notice h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+.mobile-notice p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 280px;
+}
+@media (max-width: 768px) {
+  .mobile-notice { display: flex; }
+  nav, header, section, footer, .lightbox { display: none !important; }
+}
+</style>
 </head>
 <body>
+
+<div class="mobile-notice">
+  <h2>STEFFENSEN</h2>
+  <p>This page is built for desktop. Open it on a computer to see the full kennel experience.</p>
+</div>
 
 <nav>
   <a href="#" class="nav-logo">S T E F F E N S E N</a>
